@@ -9,14 +9,15 @@
     <div class="container">
         <form action="{{ url('/')}}/product"  method="POST" class="product-form">
             @csrf
+            @method('post')
             <h1>Create A new product</h1>
             <div>
                 <label for="name">Product Name</label> <br>
                 <input type="text" name="name" placeholder="Enter product name" >
             </div>
             <div>
-                <label for="qty">Qunatity</label> <br>
-                <input type="number" name="qty" placeholder="Enter quantity" >
+                <label for="quantity">Quantity</label> <br>
+                <input type="number" name="quantity" placeholder="Enter quantity" >
             </div>
             <div>
                 <label for="price">Product Price</label><br>
